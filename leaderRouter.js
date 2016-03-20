@@ -29,7 +29,7 @@ leaderRouter.route('/:leaderId')
     })
 
     .get(function(req,res,next){
-            res.end('Will send details of the leader: ' + req.params.dishId +' to you!');
+            res.end('Will send details of the leader: ' + req.params.leaderId +' to you!');
     })
 
     .put(function(req, res, next){

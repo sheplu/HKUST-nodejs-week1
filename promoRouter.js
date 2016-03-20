@@ -29,7 +29,7 @@ promoRouter.route('/:promoId')
     })
 
     .get(function(req,res,next){
-            res.end('Will send details of the promotion: ' + req.params.dishId +' to you!');
+            res.end('Will send details of the promotion: ' + req.params.promoId +' to you!');
     })
 
     .put(function(req, res, next){
