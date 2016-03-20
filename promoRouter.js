@@ -19,7 +19,7 @@ promoRouter.route('/')
     })
 
     .delete(function(req, res, next){
-            res.end('Deleting all dishes');
+            res.end('Deleting all promotions');
     });
 
 promoRouter.route('/:promoId')
