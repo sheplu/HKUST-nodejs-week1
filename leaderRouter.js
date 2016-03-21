@@ -33,13 +33,13 @@ leaderRouter.route('/:leaderId')
     })
 
     .put(function(req, res, next){
-            res.write('Updating the leader: ' + req.params.dishId + '\n');
+            res.write('Updating the leader: ' + req.params.leaderId + '\n');
         res.end('Will update the leader: ' + req.body.name +
                 ' with details: ' + req.body.description);
     })
 
     .delete(function(req, res, next){
-            res.end('Deleting leader: ' + req.params.dishId);
+            res.end('Deleting leader: ' + req.params.leaderId);
     });
 
 module.exports = leaderRouter;

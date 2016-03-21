@@ -33,13 +33,13 @@ promoRouter.route('/:promoId')
     })
 
     .put(function(req, res, next){
-            res.write('Updating the promotion: ' + req.params.dishId + '\n');
+            res.write('Updating the promotion: ' + req.params.promoId + '\n');
         res.end('Will update the promotion: ' + req.body.name +
                 ' with details: ' + req.body.description);
     })
 
     .delete(function(req, res, next){
-            res.end('Deleting promotion: ' + req.params.dishId);
+            res.end('Deleting promotion: ' + req.params.promoId);
     });
 
 module.exports = promoRouter;
